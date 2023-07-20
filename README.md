@@ -39,3 +39,36 @@ To install GoStream, you need to have Go (1.15 or higher) installed on your mach
 
 ```bash
 go get github.com/your_username/GoStream
+```
+###Usage
+After installing GoStream, you can use the CLI commands to set up and start your stream. Here are some examples:
+```bash
+# To start the stream locally and see the preview in your browser:
+GoStream preview
+
+# To add custom overlays to your stream:
+GoStream add-overlay <overlay_url>
+
+# To begin streaming to a platform:
+GoStream start-stream <platform_name> -k <stream_key>
+```
+##Configuration
+GoStream stores user-specific configuration in a .gostreamrc file in the home directory. You can customize settings such as default streaming platform, resolution, bitrate, etc. by editing this file.
+
+##Custom Overlays
+Users can add custom overlays to their stream by providing a direct link to the overlay PNG file via the CLI command. GoStream supports simple overlays, and for complex overlays, users are advised to link them directly.
+
+##Local Preview
+The preview command enables users to view the stream output on their local browser before starting the actual stream. This feature allows users to check how their stream will look on the platform.
+
+##Streaming to Platforms
+GoStream supports various popular streaming platforms like Twitch, YouTube, etc. Users can specify the desired platform and their stream key to start streaming.
+
+##FAQs
+###Q: Can I use GoStream on low-resource devices?
+
+A: Yes, GoStream is designed to be lightweight and run efficiently on low-end machines.
+
+###Q: Can I customize the appearance of my stream?
+
+A: Absolutely! GoStream allows you to add custom overlays to enhance the visual appeal of your stream.
