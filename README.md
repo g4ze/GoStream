@@ -1,5 +1,5 @@
 # GoStream
-
+(still in its building stage)
 GoStream is a command-line interface (CLI) based streaming app that allows users to stream their screen content to various platforms like Twitch, YouTube, etc. It provides an easy-to-use interface to set up custom overlays and preview the stream locally before going live.
 
 ![GoStream Preview](insert_image_url_here)
