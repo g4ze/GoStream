@@ -5,9 +5,9 @@ Copyright © 2023 NILAY GUPTA <nilaygupta3003@gmail.com>
 package cmd
 
 import (
-	"gostream/cmd/overlay"
-	"gostream/cmd/preview"
-	"gostream/cmd/stream"
+	overlaycmd "gostream/cmd/overlay"
+	previewcmd "gostream/cmd/preview"
+	streamcmd "gostream/cmd/stream"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -38,9 +38,9 @@ func Execute() {
 }
 
 func addSunCommandPalletes() {
-	rootCmd.AddCommand(stream.StreamCmd)
-	rootCmd.AddCommand(overlay.OverlayCmd)
-	rootCmd.AddCommand(preview.PreviewCmd)
+	rootCmd.AddCommand(streamcmd.StreamCmd)
+	rootCmd.AddCommand(overlaycmd.OverlayCmd)
+	rootCmd.AddCommand(previewcmd.PreviewCmd)
 }
 
 func init() {

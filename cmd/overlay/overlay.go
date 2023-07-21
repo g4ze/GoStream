@@ -2,7 +2,7 @@
 Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 
 */
-package overlay
+package overlaycmd
 
 import (
 	"fmt"
@@ -17,6 +17,7 @@ var OverlayCmd = &cobra.Command{
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("overlay called")
+
 		//
 	},
 }
@@ -28,7 +29,7 @@ func init() {
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
 	// overlayCmd.PersistentFlags().String("foo", "", "A help for foo")
-	OverlayCmd.Flags().StringP("overlay", "o", "", "overlay to be attached to the stream")
+
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
 	// overlayCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
